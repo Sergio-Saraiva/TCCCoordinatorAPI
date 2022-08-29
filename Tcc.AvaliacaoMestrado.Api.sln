@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.AvaliacaoMestrado.Api", "Tcc.AvaliacaoMestrado.Api\Tcc.AvaliacaoMestrado.Api.csproj", "{14CF68A7-8B17-433D-A430-37D506F41724}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.AvaliacaoMestrado.Domain", "Tcc.AvaliacaoMestrado.Domain\Tcc.AvaliacaoMestrado.Domain.csproj", "{5154F07A-BEAE-45F2-8A32-1CDDEFFA6C89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.AvaliacaoMestrado.Data", "Tcc.AvaliacaoMestrado.Data\Tcc.AvaliacaoMestrado.Data.csproj", "{B3CEBBA0-5FCF-44D1-8A32-15ED51642D05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.AvaliacaoMestrado.Ioc", "Tcc.AvaliacaoMestrado.Ioc\Tcc.AvaliacaoMestrado.Ioc.csproj", "{D4A2CD1F-7ABF-432F-8210-619805C8365D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.AvaliacaoMestrado.Shared", "Tcc.AvaliacaoMestrado.Shared\Tcc.AvaliacaoMestrado.Shared.csproj", "{EEE0CA7C-C321-48DA-A4FE-324EB09EA1E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tcc.AvaliacaoMestrado.Application", "Tcc.AvaliacaoMestrado.Application\Tcc.AvaliacaoMestrado.Application.csproj", "{E0D4533B-8D02-4152-9A79-EBC6CD6FBFDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14CF68A7-8B17-433D-A430-37D506F41724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CF68A7-8B17-433D-A430-37D506F41724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CF68A7-8B17-433D-A430-37D506F41724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CF68A7-8B17-433D-A430-37D506F41724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5154F07A-BEAE-45F2-8A32-1CDDEFFA6C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5154F07A-BEAE-45F2-8A32-1CDDEFFA6C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5154F07A-BEAE-45F2-8A32-1CDDEFFA6C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5154F07A-BEAE-45F2-8A32-1CDDEFFA6C89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CEBBA0-5FCF-44D1-8A32-15ED51642D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CEBBA0-5FCF-44D1-8A32-15ED51642D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CEBBA0-5FCF-44D1-8A32-15ED51642D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CEBBA0-5FCF-44D1-8A32-15ED51642D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A2CD1F-7ABF-432F-8210-619805C8365D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A2CD1F-7ABF-432F-8210-619805C8365D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A2CD1F-7ABF-432F-8210-619805C8365D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A2CD1F-7ABF-432F-8210-619805C8365D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE0CA7C-C321-48DA-A4FE-324EB09EA1E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE0CA7C-C321-48DA-A4FE-324EB09EA1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE0CA7C-C321-48DA-A4FE-324EB09EA1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE0CA7C-C321-48DA-A4FE-324EB09EA1E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D4533B-8D02-4152-9A79-EBC6CD6FBFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D4533B-8D02-4152-9A79-EBC6CD6FBFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D4533B-8D02-4152-9A79-EBC6CD6FBFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D4533B-8D02-4152-9A79-EBC6CD6FBFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A19CF61-77AB-47BD-BBCB-353337D13E09}
+	EndGlobalSection
+EndGlobal
