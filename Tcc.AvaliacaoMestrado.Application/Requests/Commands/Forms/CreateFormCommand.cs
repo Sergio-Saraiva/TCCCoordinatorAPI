@@ -7,11 +7,6 @@ namespace Tcc.AvaliacaoMestrado.Application.Requests.Commands.Forms
 {
     public class CreateFormCommand : IRequest<Result<FormViewModel>>, IValidatable
     {
-        public CreateFormCommand(string name)
-        {
-            Name = name;
-        }
-
-        public string Name { get; set; }
+       public string Name { get; set; }
     }
 }

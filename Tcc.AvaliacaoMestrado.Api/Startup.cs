@@ -1,6 +1,8 @@
-﻿using MediatR;
+﻿using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using Tcc.AvaliacaoMestrado.Application.Validators;
 using Tcc.AvaliacaoMestrado.Ioc;
 using Tcc.AvaliacaoMestrado.Shared.AppSettings;
 
@@ -40,14 +42,14 @@ namespace Tcc.AvaliacaoMestrado.Api
 
             services.AddApplicationDependecyInjection();
 
+            services.AddMvc().AddFluentValidation(options => options.RegisterValidatorsFromAssemblyContaining<IValidatable>());
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Coordenador API", Version = "v1" });
             });
             
             services.AddCors();
-
-
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
