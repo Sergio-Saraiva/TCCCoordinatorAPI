@@ -13,6 +13,9 @@ namespace Tcc.AvaliacaoMestrado.Ioc
             services.AddSingleton(Log.Logger);
 
             services.AddScoped<IFormsRepository, FormsRepository>();
+            services.AddScoped<IQuestionsRepository, QuestionsRepository>();
+            services.AddScoped<IOptionsRepository, OptionsRepository>();
+            services.AddScoped<IAnswersRepository, AnswersRepository>();
         }
     }
 }

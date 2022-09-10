@@ -26,6 +26,7 @@ namespace Tcc.AvaliacaoMestrado.Data.Repositories
         public void Delete(T entity)
         {
             _context.Set<T>().Remove(entity);
+            _context.SaveChanges();
         }
 
         public async Task<IQueryable<T>> GetAllAsync()

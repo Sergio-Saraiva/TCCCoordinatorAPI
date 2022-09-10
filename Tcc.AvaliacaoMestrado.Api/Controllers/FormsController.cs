@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Tcc.AvaliacaoMestrado.Api.Controllers.Base;
 using Tcc.AvaliacaoMestrado.Application.Requests.Commands.Forms;
-using Tcc.AvaliacaoMestrado.Application.Requests.Queries;
 using Tcc.AvaliacaoMestrado.Application.Requests.Queries.Forms;
 using Tcc.AvaliacaoMestrado.Application.Validators;
 
@@ -29,5 +28,7 @@ namespace Tcc.AvaliacaoMestrado.Api.Controllers
         [HttpPut]
         public Task<IActionResult> UpdateForm([FromBody] UpdateFormCommand updateFormCommand) => SendRequest(updateFormCommand);
 
+        [HttpDelete("{id}")]
+        public Task<IActionResult> DeleteForm([FromRoute] Guid id) => SendRequest(new DeleteFormCommand(id));
     }
 }

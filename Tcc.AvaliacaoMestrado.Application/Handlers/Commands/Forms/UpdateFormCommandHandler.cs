@@ -21,7 +21,7 @@ namespace Tcc.AvaliacaoMestrado.Application.Handlers.Commands.Forms
 
         public async Task<Result<FormViewModel>> Handle(UpdateFormCommand request, CancellationToken cancellationToken)
         {
-            var form = await _formsRepository.GetByIdAsync(request.Id);
+            var form = await _formsRepository.GetByIdAllAsync(request.Id);
             if (form == null)
                 return Result.Error<FormViewModel>(new Exception("This form does not exists"));
 

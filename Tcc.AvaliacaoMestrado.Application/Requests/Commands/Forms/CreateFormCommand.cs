@@ -5,7 +5,7 @@ using Tcc.AvaliacaoMestrado.Shared.ViewModels;
 
 namespace Tcc.AvaliacaoMestrado.Application.Requests.Commands.Forms
 {
-    public class CreateFormCommand : IRequest<Result<FormViewModel>>, IValidatable
+    public class CreateFormCommand : IRequest<Result<FormViewModel>>
     {
        public string Name { get; set; }
     }

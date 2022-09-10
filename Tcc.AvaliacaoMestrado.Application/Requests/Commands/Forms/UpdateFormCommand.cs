@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using OperationResult;
+using Tcc.AvaliacaoMestrado.Application.Validators;
 using Tcc.AvaliacaoMestrado.Shared.ViewModels;
 
 namespace Tcc.AvaliacaoMestrado.Application.Requests.Commands.Forms

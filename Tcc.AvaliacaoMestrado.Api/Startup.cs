@@ -38,6 +38,8 @@ namespace Tcc.AvaliacaoMestrado.Api
 
             services.AddMediatR();
 
+            services.AddCors();
+
             services.AddAutoMapperConfigureServices();
 
             services.AddApplicationDependecyInjection();
@@ -49,7 +51,6 @@ namespace Tcc.AvaliacaoMestrado.Api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Coordenador API", Version = "v1" });
             });
             
-            services.AddCors();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -61,6 +62,7 @@ namespace Tcc.AvaliacaoMestrado.Api
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Coordenador API V1"));
             }
 
+            app.UseCors(p => p.WithOrigins("*").AllowAnyMethod().AllowAnyHeader());
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseEndpoints(endpoints =>

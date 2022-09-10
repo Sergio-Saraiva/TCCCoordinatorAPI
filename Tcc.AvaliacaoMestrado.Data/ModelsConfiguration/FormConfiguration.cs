@@ -11,6 +11,8 @@ namespace Tcc.AvaliacaoMestrado.Data.ModelsConfiguration
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.Name).IsRequired().HasMaxLength(200);
+            builder.Property(x => x.isCreated).IsRequired().HasDefaultValue(false);
+            builder.HasMany(x => x.Questions).WithOne(x => x.Form);
         }
     }
 }

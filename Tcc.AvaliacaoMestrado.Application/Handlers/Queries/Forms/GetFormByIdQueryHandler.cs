@@ -7,7 +7,7 @@ using Tcc.AvaliacaoMestrado.Shared.ViewModels;
 
 namespace Tcc.AvaliacaoMestrado.Application.Handlers.Queries.Forms
 {
-    public class GetFormByIdQueryHandler : IRequestHandler<GetFormByIdQuery, Result<FormViewModel>>
+    public class GetFormByIdQueryHandler : IRequestHandler<GetFormByIdQuery, Result<GetByIdFormViewModel>>
     {
         private readonly IFormsRepository _formsRepository;
         private readonly IMapper _mapper;
@@ -18,13 +18,13 @@ namespace Tcc.AvaliacaoMestrado.Application.Handlers.Queries.Forms
             _mapper = mapper;
         }
 
-        public async Task<Result<FormViewModel>> Handle(GetFormByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Result<GetByIdFormViewModel>> Handle(GetFormByIdQuery request, CancellationToken cancellationToken)
         {
-            var form = await _formsRepository.GetByIdAsync(request.Id);
+            var form = await _formsRepository.GetByIdAllAsync(request.Id);
             if(form == null)
-                return Result.Error<FormViewModel>(new Exception("This form was not found"));
+                return Result.Error<GetByIdFormViewModel>(new Exception("This form was not found"));
 
-            return Result.Success(_mapper.Map<FormViewModel>(form));
+            return Result.Success(_mapper.Map<GetByIdFormViewModel>(form));
         }
     }
 }

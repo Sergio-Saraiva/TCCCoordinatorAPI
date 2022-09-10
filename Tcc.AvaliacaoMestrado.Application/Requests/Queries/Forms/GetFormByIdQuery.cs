@@ -4,7 +4,7 @@ using Tcc.AvaliacaoMestrado.Shared.ViewModels;
 
 namespace Tcc.AvaliacaoMestrado.Application.Requests.Queries.Forms
 {
-    public class GetFormByIdQuery : IRequest<Result<FormViewModel>>
+    public class GetFormByIdQuery : IRequest<Result<GetByIdFormViewModel>>
     {
         public GetFormByIdQuery(Guid id)
         {

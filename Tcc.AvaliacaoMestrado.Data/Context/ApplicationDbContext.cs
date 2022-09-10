@@ -21,6 +21,9 @@ namespace Tcc.AvaliacaoMestrado.Data.Context
         }
 
         public virtual DbSet<Form> Forms { get; set; }
+        public virtual DbSet<Question> Questions { get; set; }
+        public virtual DbSet<Option> Options { get; set; }
+        public virtual DbSet<Answer> Answers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
